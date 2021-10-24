@@ -1,0 +1,109 @@
+        .discuss {
+            margin-left: auto;
+            width: 1024px;
+            background-color: rgba(11, 11, 11, .6);
+            border-radius: 10px;
+        }
+        .discuss-type {
+            text-align: left;
+            margin-left: 15px;
+        }
+        .discuss-type ul li{
+            color: #ccc;
+            margin-top: 10px;
+        }
+        .discuss-type ul li:hover{
+            cursor: pointer;
+            color:  #33ccff;
+        }
+        .discuss-type ul li {
+            display: inline-block;
+            background-color: rgba(33, 33, 33, .6);
+            padding: 5px 10px;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+        .discuss-txt {
+            display: flex;
+            background-color: rgba(44, 44, 44, .6);
+            padding: 5px 10px;
+            margin-top: 10px;
+            color: #ccc;
+            text-align: center;
+        }
+        .discuss-txt span:nth-of-type(1) {
+            flex-grow: 3;
+            
+        }
+        .discuss-txt span:nth-of-type(2) {
+            flex-grow: 1;
+        }
+        .discuss-txt span:nth-of-type(3) {
+            flex-grow: 1;
+        }
+        .discuss-content ul li {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px dashed #444;
+            padding: 10px 0;
+            margin-left: 10px;
+        }
+        .discuss-content ul li h2 {
+            width: 575px;
+            text-align: left;
+        }
+        .discuss-content ul li h2 a {
+            text-decoration: none;
+            color: #33ccff;
+            font-size: 16px;
+            font-weight: normal;
+            opacity: .9;
+        }
+        .discuss-content ul li span{
+            color: #ccc;
+            text-align: center;
+        }
+        .discuss-content ul li .new::after {
+            content: 'New';
+            color: #EEDD00;
+            font-size: 16px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .discuss-content ul li .hot::after {
+            content: 'Hot';
+            color: red;
+            font-size: 16px;
+            display: inline-block;
+            margin-left: 10px;
+            transform: rotateZ(-5deg);
+            position: relative;
+            top: -2px;
+        }
+        .discuss-content ul li h2 a:hover {
+            text-decoration: underline;
+        }
+        .discuss-content ul li h2 span {
+            color: #ccc;
+        }
+        .discuss-content ul li span:nth-of-type(1) {
+            flex-grow: 1;
+            font-size: 16px;
+            text-align: center;
+        }
+        .discuss-content ul li span:nth-of-type(2) {
+            flex-grow: 1;
+            font-size: 16px;
+            text-align: center;
+        }
+        .goto-page{
+            float: right;
+        }
+        .goto-page li{
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: rgba(55, 55, 55, .6);
+            border-radius: 5px;
+            margin: 20px 5px;
+            color: #ccc;
+        }

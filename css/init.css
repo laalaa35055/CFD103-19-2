@@ -1,0 +1,138 @@
+* {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        h1{
+            font-family: 'Wu';
+            color: red;
+            letter-spacing: 5px;
+            opacity: .8;
+        }
+
+        @font-face {
+            font-family: 'Wu';
+            src: url('../font/onryou/onryou.TTF') format("truetype");
+        }
+        body {
+            background-image: url(../img/decorate/background_image.jpg);
+        }
+        #control-bar{
+            display: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .main-header {
+            width: 100px;
+            position: fixed;
+            top: 0;
+            box-sizing: border-box;
+        }
+
+        .sidebar {
+            background-color: rgba(11, 11, 11, .7);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .logo {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .logo img {
+            width: 100%;
+        }
+        .hb{
+            width: 40px;
+            height: 40px;
+            background-color: #aaa;
+            position: relative;
+            border-radius: 5px;
+            display: none;
+        }
+        .hb span{
+            display: block;
+            width: 32px;
+            height: 2px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .hb span:first-child {
+            
+            transform: translateY(10px);
+        }
+
+        .hb span:last-child {
+            transform: translateY(-10px);
+        }
+
+        .main-menu li {
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .main-menu li a {
+            text-decoration: none;
+            color: #33ccff;
+            transition: color .5s;
+        }
+
+        .main-menu li a:hover {
+            color: red;
+        }
+
+        .main-menu li .fab {
+            margin-top: 10px;
+            font-size: 25px;
+            color: white;
+            transition: transform .3s;
+        }
+
+        .main-menu li .fab:hover {
+            color: white;
+            transform: scale(1.5);
+        }
+
+        .search {
+            background-color: rgba(99, 99, 99, .3);
+            background-blend-mode: multiply;
+            background-image: url(../img/decorate/saying_img.jpg);
+            background-size: cover;
+            background-position: center center;
+            width: 1200px;
+            height: 800px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search h1 {
+            opacity: .75;
+            font-size: 3.125rem;
+            margin-bottom: 1.562525rem;
+        }
+
+        .search input {
+            text-indent: 1em;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        footer {
+            clear: both;
+            padding: 5px;
+            color: #ccc;
+            text-align: center;
+            background-color: rgba(44, 44, 44, .5);
+        }
