@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/39e7c5d7e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/init.css">
+    <title>Ghost-House</title>
+    <style type="text/css">
+
+        .popular-ghost{
+
+            width: 100%;
+            background-color: rgba(11, 11, 11, .6);
+        }
+        .popular-ghost h1{
+            padding-top: 40px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .popular-ghost-contents{
+            width: 1000px;
+            margin: auto;
+        }
+        .ghost-pic{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .ghost-pic i{
+            color: #ccc;
+            margin: auto 10px;
+            font-size: 20px;
+        }
+        .ghost-pic img{
+            width: 200px;
+            vertical-align: top;
+            margin: auto 10px;
+        }
+        .point ul {
+            margin: 10px auto;
+            text-align: center;
+        }
+        .point ul li{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            border-radius: 50%;
+            margin: 5px;
+        }
+        .other-img{
+            display: flex;
+            justify-content: space-around;
+        }
+        .popular-ghost-contents h2{
+            color: red;
+            font-size: 30px;
+            margin: 50px auto 50px;
+        }
+        .other-img img{
+            width: 180px;
+            margin-right: 10px;
+            margin-bottom: 80px;
+        }
+        .vote-time{
+            width: 100%;
+        }
+        .vote-time h1{
+            text-align: center;
+            margin: 50px auto;
+        }
+        .country{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    
+        .country li{
+            display: inline-block;
+            margin: auto 10px;
+        }
+        .country li:nth-child(1){
+            padding-bottom: 10px;
+            border-bottom: 2px solid red;
+        }
+        .country li a{
+            text-decoration: none;
+            color: #33ccff;
+            font-size: 20px;
+        }
+        .vote-time{
+            width: 1000px;
+            margin-left: auto;
+        }
+        .vote-time-img{
+            margin: auto;
+            width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .vote-time-img img{
+            width: 300px;
+            margin: 10px 15px;
+        }
+        .select-page{
+           margin: auto;
+           text-align: center;
+           margin: 40px auto 100px;
+        }
+        .select-page li{
+            display: inline-block;
+            margin: auto 10px;
+            padding: 5px 10px;
+            background-color: rgba(55, 55, 55, .6);
+            border-radius: 5px;
+        }
+        .select-page li a{
+            color: #ccc;
+            text-decoration: none;
+        }
+        .count{
+            margin: auto;
+            width: 100%;
+            background-color: rgba(11, 11, 11, .6);
+        }
+        .time{
+            text-align: center;
+            font-size: 50px;
+            padding: 50px;
+            color: #ccc;
+        } 
+   
+        .count-people{
+            display: flex;
+            justify-content: space-around;
+            color: #ccc;
+        }
+        .count-people li{
+            text-align: center;
+        }
+        .count-people li p:nth-child(1){
+            color: #fff;
+            font-weight: 900;
+            font-size: 40px;
+        }
+        .count-people li p:nth-child(2){
+            font-weight: 300;
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="control-bar">
+    <div class="container">
+        <input type="checkbox" id="control-bar">
+        <header class="main-header">
+            <ul class="sidebar">
+                <div class="logo">
+                    <a href="index.html"><img src="img/decorate/logo.png" alt="墨x怪"></a>
+                </div>
+                <label class="hb" for="control-bar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="main-menu">
+                    <li><a href="#">熱門地點</a></li>
+                    <li><a href="Ghost_House.html">鬼怪屋</a></li>
+                    <li><a href="discuss.html">討論區</a></li>
+                    <li><a href="#">百鬼圖</a></li>
+                    <li><a class="fab fa-facebook-square" href="#"></a></li>
+                    <li><a class="fab fa-instagram" href="#"></a></li>
+                    <li><a class="fab fa-youtube" href="#"></a></li>
+                    <li><a class="fab fa-twitter" href="#"></a></li>
+                </div>
+            </ul>
+        </header>
+        <div class="search">
+            <h1>鬼怪屋</h1>
+            <input type="search" placeholder="搜尋國家">
+        </div>
+
+        <div class="popular-ghost">
+            <h1>人氣鬼怪</h1>
+            <div class="popular-ghost-contents">
+                <div class="ghost-pic">
+                    <i class="fas fa-chevron-circle-left"></i>
+                    <a href="ghost_card.html"><img src="img/ghost/j_1.png" alt=""></a>
+                    <a href="ghost_card.html"><img src="img/ghost/a_1.png" alt=""></a>
+                    <a href="ghost_card.html"><img src="img/ghost/t_1.png" alt=""></a>
+                    <i class="fas fa-chevron-circle-right"></i>
+                </div>
+                <div class="point">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <h2>你可能感興趣：</h2>
+                <div class="other-img">
+                    <a href="ghost_card.html"><img src="img/ghost/j_1.png" alt=""></a>
+                    <a href="ghost_card.html"><img src="img/ghost/j_1.png" alt=""></a>
+                    <a href="ghost_card.html"><img src="img/ghost/j_1.png" alt=""></a>
+                    <a href="ghost_card.html"><img src="img/ghost/j_1.png" alt=""></a>
+                    <a href="ghost_card.html"><img src="img/ghost/j_1.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="vote-time">
+            <h1>限時投票</h1>
+            <ul class="country">
+                <li><a href="#">全部</a></li>
+                <li><a href="#">日本</a></li>
+                <li><a href="#">台灣</a></li>
+                <li><a href="#">泰國</a></li>
+                <li><a href="#">更多</a></li>
+            </ul>
+            <div class="vote-time-img">
+                <a href="ghost_card.html"><img src="img/ghost/j_1.png" alt=""></a>
+                <a href="ghost_card.html"><img src="img/ghost/j_1.png" alt=""></a>
+                <a href="ghost_card.html"><img src="img/ghost/j_1.png" alt=""></a>
+                <a href="ghost_card.html"><img src="img/ghost/j_1.png" alt=""></a>
+                <a href="ghost_card.html"><img src="img/ghost/j_1.png" alt=""></a>
+                <a href="ghost_card.html"><img src="img/ghost/j_1.png" alt=""></a>
+            </div>
+
+            <ul class="select-page">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">下一頁</a></li>
+            </ul>
+        </div>
+        <div class="count">
+            <div class="time">
+                <p>活動剩餘時間：<span>000</span></p>
+            </div>
+            <ul class="count-people">
+                <li>
+                    <p>299</p>
+                    <p>投票人數</p>
+                </li>
+                <li>
+                    <p>299</p>
+                    <p>喜愛人數</p>
+                </li>
+                <li>
+                    <p>299</p>
+                    <p>投稿人數</p>
+                </li>
+                <li>
+                    <p>299</p>
+                    <p>訂閱人數</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p>Disclaimer: Tibame Frontend Class CFD103 Practice use only</p>
+    </footer>
+
+
+
+    <div class="goto-top">
+        <i id="goto-top" class="fas fa-chevron-circle-up"></i>
+    </div>
+</body>
+
+</html>
