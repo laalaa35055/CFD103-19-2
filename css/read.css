@@ -1,0 +1,104 @@
+.read-block{
+    width: 1200px;
+    background-color: rgba(11, 11, 11, .6);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.read-contents{
+    padding-top: 50px;
+    width: 1100px;
+    margin-left: auto;
+    background-color: transparent;
+}
+.bread{
+    margin: auto 50px;
+}
+.bread a {
+    text-decoration: none;
+    color: #33ccff;
+}
+.bread span{
+    color: #ccc;
+    margin: auto 10px;
+}
+.read-content{
+    margin: 50px auto;
+}
+.read-content header{
+    padding: 10px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgba(44, 44, 44, .6);
+    color: #ccc;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.read-content header h3{
+    flex-grow: 2;
+    font-size: 20px;
+}
+.read-content header span{
+    flex-grow: 1;
+    font-size: 18px;
+}
+.read-body{
+    padding-top: 100px;
+    background-color: rgba(22, 22, 22, .6);
+    width: 100%;
+    margin: auto;
+}
+.read-txt{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: auto;
+    width: 900px;
+    color: #ccc;
+}
+.read-txt p{
+   line-height: 2em;
+   margin: 20px 60px;
+}
+.url-source{
+    width: 1100px;
+    margin: 100px auto 0;
+    padding-bottom: 50px;
+}
+.url-source p{
+    float: right;
+    color: #ccc;
+    margin-right: 60px;
+}
+.url-source a{
+    color: #33ccff;
+    text-decoration: none;
+}
+
+.interest-block{
+    background-color: rgba(11, 11, 11, .6);
+    margin-bottom: 100px;
+}
+.interest-block h2{
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(44, 44, 44, .6);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.interest-contents{
+    background-color: rgba(22, 22, 22, .6);
+}
+.interest-contents .content{
+    padding: 15px;
+    color: #ccc;
+    border-bottom: 1px dashed #ccc;
+}
+.interest-contents .content a{
+    text-decoration: none;
+    color:#33ccff; 
+}
+.interest-contents .content span:nth-of-type(2){
+    float: right;
+}
+

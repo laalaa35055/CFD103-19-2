@@ -146,6 +146,23 @@
             color: #ccc;
         }
         .goto-top i:hover{
-            color: rgba(44, 44, 44, .8);
+            color: #fff;
             cursor: pointer;
+        }
+        .new::after {
+            content: 'New';
+            color: #EEDD00;
+            font-size: 16px;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .hot::after {
+            content: 'Hot';
+            color: red;
+            font-size: 16px;
+            display: inline-block;
+            margin-left: 10px;
+            transform: rotateZ(-5deg);
+            position: relative;
+            top: -2px;
         }

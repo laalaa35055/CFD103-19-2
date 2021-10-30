@@ -48,6 +48,9 @@
             padding: 10px 0;
             margin-left: 10px;
         }
+        .discuss-content ul li:nth-last-child(1){
+            border-bottom: none;
+        }
         .discuss-content ul li h2 {
             width: 575px;
             text-align: left;
@@ -63,23 +66,7 @@
             color: #ccc;
             text-align: center;
         }
-        .discuss-content ul li .new::after {
-            content: 'New';
-            color: #EEDD00;
-            font-size: 16px;
-            display: inline-block;
-            margin-left: 10px;
-        }
-        .discuss-content ul li .hot::after {
-            content: 'Hot';
-            color: red;
-            font-size: 16px;
-            display: inline-block;
-            margin-left: 10px;
-            transform: rotateZ(-5deg);
-            position: relative;
-            top: -2px;
-        }
+        
         .discuss-content ul li h2 a:hover {
             text-decoration: underline;
         }
