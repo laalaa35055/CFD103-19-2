@@ -32,17 +32,12 @@ function time_peple() {
     // }, 5000);
 }
 
-function hot_ghost(n){
-    var img_1 = document.getElementById("img_1");
-    var img_2 = document.getElementById("img_2");
-    var img_3 = document.getElementById("img_3");
-    var point = document.getElementById("point");
-    setInterval(() => {
-        img_1.src = "img/ghost/"+(n%5)+".png";
-        img_2.src = "img/ghost/"+((n+1)%5)+".png";
-        img_3.src = "img/ghost/"+((n+2)%5)+".png";
-        n++;
-    }, 3000);
+function hot_ghost() {
+    var n = 5;
+    img_1.src = "img/ghost/" + (n % 5) + ".png";
+    img_2.src = "img/ghost/" + ((n + 1) % 5) + ".png";
+    img_3.src = "img/ghost/" + ((n + 2) % 5) + ".png";
+    n++;
 }
 
 
@@ -52,8 +47,25 @@ function hot_ghost(n){
 
 
 function init() {
-    window.onload = time_peple();
-    window.onload = hot_ghost(5);
+    var point_0 = document.getElementById('point_0');
+    var point_1 = document.getElementById('point_1');
+    var point_2 = document.getElementById('point_2');
+    var point_3 = document.getElementById('point_3');
+    var point_4 = document.getElementById('point_4');
+    var img_1 = document.getElementById("img_1");
+    var img_2 = document.getElementById("img_2");
+    var img_3 = document.getElementById("img_3");
+    var n= 5;
+    var timeisgood = setInterval(function () {hot_ghost()}, 3000);
     
+    point_0.onclick = function () {
+        clearInterval(timeisgood);
+        n = 5;
+        setInterval(timeisgood);
+    };
+
+    
+    
+
 }
 window.addEventListener('load', init, false);

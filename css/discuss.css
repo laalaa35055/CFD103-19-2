@@ -46,6 +46,7 @@
             align-items: center;
             border-bottom: 1px dashed #444;
             padding: 10px 0;
+            padding-right: 10px;
             margin-left: 10px;
         }
         .discuss-content ul li:nth-last-child(1){
@@ -86,6 +87,11 @@
         }
         .goto-page{
             float: right;
+        }
+        .goto-page:hover{
+            cursor: pointer;
+            color: #33ccff;
+            color: red;
         }
         .goto-page li{
             display: inline-block;

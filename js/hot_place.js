@@ -2,8 +2,35 @@ window.onload = function(){
     var j = document.getElementById('j');
     var xy1 = document.getElementById('xy_1');
     var xy2 = document.getElementById('xy_2');
+    var v_1 = document.getElementById('v_1');
+    var v_2 = document.getElementById('v_2');
     var map = document.getElementById('map');
     var xy = document.getElementsByClassName("xy");
+    var vedio = document.getElementsByClassName("place-vedio-block");
+
+    map.onclick = function(){
+        if(map.clientHeight > 10){
+            map.style.height = "10px";
+            for( var i=0;i<= xy.length;i++){
+                xy[i].style.display= "none";
+            }
+        }
+    };
+
+
+
+    v_1.onclick = function(){
+        window.scrollTo(0,document.body.clientHeight);
+        console.log(info);
+        vedio[0].style.display = "flex";
+        vedio[1].style.display = "none";
+    };
+    v_2.onclick = function(){
+        console.log(info);
+        window.scrollTo(0,document.body.clientHeight);
+        vedio[0].style.display = "none";
+        vedio[1].style.display = "flex";
+    };
     j.onclick = function(){
         if(map.clientHeight <= 10){
             map.style.height = "1000px";
@@ -15,7 +42,8 @@ window.onload = function(){
             map.style.height = "10px";
         }
     };
-    xy1.onclick = function(){
+    xy1.onclick = function(e){
+        e.stopPropagation();
         var info = document.getElementsByClassName("info");
         var vedio = document.getElementsByClassName("place-vedio-block");
         info[1].style.display = "none";
@@ -23,7 +51,8 @@ window.onload = function(){
         info[0].style.display = "flex";
         vedio[0].style.display = "flex";
     };
-    xy2.onclick = function(){
+    xy2.onclick = function(e){
+        e.stopPropagation();
         var info = document.getElementsByClassName("info");
         var vedio = document.getElementsByClassName("place-vedio-block");
         info[0].style.display = "none";
@@ -40,7 +69,3 @@ window.onload = function(){
         
     }
 };
-function hide(){
-    alert('123');
-    window.scrollTo(0, document.body.scrollHeight);
-}
