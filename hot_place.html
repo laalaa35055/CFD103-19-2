@@ -1,120 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/39e7c5d7e7.js" crossorigin="anonymous"></script>
     <script src="js/init.js"></script>
+    <script src="js/hot_place.js"></script>
+    <link rel="stylesheet" href="css/hot_place.css">
     <link rel="stylesheet" href="css/init.css">
     <title>hot_place</title>
-    <style type="text/css">
-        main {
-            width: 1200px;
-            margin: auto;
-        }
-
-        main h1 {
-            width: 1200px;
-            margin: 50px auto;
-            text-align: center;
-        }
-
-        .a {
-            width: 600px;
-            height: 600px;
-        }
-
-        main .info {
-            margin: 50px 0 100px auto;
-            width: 1100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .info-img {
-            width: 350px;
-
-        }
-        .info-img p{
-            color: #ccc;
-            font-size: 30px;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .info-img img {
-            width: 100%;
-            vertical-align: top;
-            border-radius: 10px;
-        }
-
-        .info-txt {
-            width: 500px;
-            margin-left: 150px;
-            color: #ccc;
-        }
-        .info-txt div{
-            margin-top: 30px;
-        }
-        .info-txt a{
-            padding: 5px 10px;
-            background-color: #ccc;
-            color: red;
-            text-decoration: none;
-            margin-right:10px ;
-            border-radius: 5px;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        .place-vedio-block {
-            width: 1200px;
-            margin: auto auto 50px;
-            display: flex;
-            justify-content: center;
-            background-color: rgba(11, 11, 11, .6);
-            
-        }
-
-        .place-vedio-info {
-            width: 350px;
-            margin: auto;
-            margin: auto -50px auto auto;
-        }
-
-        .place-vedio-info p {
-            color: #ccc;
-            margin: 30px auto;
-            font-size: 24px;
-        }
-
-        .place-vedio {
-            margin: auto;
-            width: 450px;
-        }
-
-        .place-vedio img {
-            width: 100%;
-            vertical-align: top;
-        }
-    </style>
-
 </head>
-
 <body>
     <div class="container">
         <input type="checkbox" id="control-bar">
@@ -148,67 +44,83 @@
 
 
     <main>
-        <h1>地圖導覽</h1>
-        <div class="a"></div>
-        <div class="info">
-
-            <div class="info-img">
-                <p>恐怖指數:<span>999</span></p>
-                <img src="https://picsum.photos/350/250/?random=1">
+        <h1>地點導覽</h1>
+        <div class="map_block">
+            <ul>
+                <li id="j" class="map_j">日本</li>
+                <li id="t" class="map_t">台灣</li>
+                <li>泰國</li>
+                <li>美國</li>
+            </ul>
+            <div id="map" class="map">
+                <p id="xy_1" class="xy"></p>
+                <p id="xy_2" class="xy"></p>
             </div>
-
+        </div>
+        <div class="info">
+            <div class="info-img">
+                <img src="img/decorate/position_1.png">
+            </div>
             <div class="info-txt">
                 <h2>地點：<span>日本青木原樹海自殺森林</span></h2>
-                <h2>等待成團：<span>12團</span></h2>
+                <h2>恐怖指數：<span>
+                    <img src="img/decorate/star.png" alt="">
+                    <img src="img/decorate/star.png" alt="">
+                    <img src="img/decorate/star.png" alt="">
+                    <img src="img/decorate/star.png" alt="">
+                    <img src="img/decorate/star.png" alt="">
+                </span></h2>
                 <h2>介紹：<span>青木原樹海為日本著名的自殺勝地。到此探險的旅團有極高機率遇到自殺者上吊的屍體。著名YouTuber羅根保羅（Logan
                         Paul）因拍攝懸掛在樹上的遺體，曾受到公眾猛烈抨擊。</span></h2>
                 <div>
-                    <a href="#">123</a>
-                    <a href="#">456</a>
+                    <a href="Ghost_House.html">投票</a>
+                    <a onclick="hide()">影片</a>
                 </div>
             </div>
 
-
-
+        </div>
+        <div class="info">
+            <div class="info-img">
+                <img src="img/place/7.png">
+            </div>
+            <div class="info-txt">
+                <h2>地點：<span>犬鳴隧道</span></h2>
+                <h2>恐怖指數：<span>
+                    <img src="img/decorate/star.png" alt="">
+                    <img src="img/decorate/star.png" alt="">
+                    <img src="img/decorate/star.png" alt="">
+                    <img src="img/decorate/star.png" alt="">
+                    <img src="img/decorate/star.png" alt="">
+                </span></h2>
+                <h2>介紹：<span>聽說以前水霸員工，有時會聽到從湖面傳來奇怪的聲音，去察看時卻空無一人…也有人在水面上看到異樣亮光，漸漸地，越來越多人來在此自殺...</span></h2>
+                <div>
+                    <a href="Ghost_House.html">投票</a>
+                    <a onclick="hide()">影片</a>
+                </div>
+            </div>
 
         </div>
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
     <div class="place-vedio-block">
         <div class="place-vedio-info">
-            <h1>真實旅拍</h1>
-            <p>正式進入樹海之後，當你行走一段時間，你會發現林中很多地方都設置了各式各樣的勸告牌或是防止自殺會的郵箱，勸籲那些想自殺的人回頭是岸。對呀，人的生存有很多意義，不應為了一時的挫折和打擊，就自尋短見啊！</p>
+            <h1>影片介紹</h1>
+            <p>日本富士山裡有座青木原樹海，因不知名力量每年都有人在此自殺，每到秋季日本就會組成搜查隊進入森林搜尋自殺者，都會發現約百具屍體，且數字年年升高，樹海內常可見珍惜生命的標示與立牌，呼籲想自殺者三思，自殺森林為美麗的富士山增添了幾分恐怖的陰影。</p>
         </div>
         <div class="place-vedio">
-            <img src="https://picsum.photos/450/450/?random=1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MLYp4f4VyPc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="place-vedio-block">
+        <div class="place-vedio-info">
+            <h1>影片介紹</h1>
+            <p>相傳日本九洲犬鳴村因興建水壩遷村，當水壩完工後，村裡的墓地就沉在水底，此後，開始有需多奇奇怪怪的事件發生。</p>
+        </div>
+        <div class="place-vedio">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eHWvtMEO9YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+        </div>
+    </div>
     <footer>
         <p>Disclaimer: Tibame Frontend Class CFD103 Practice use only</p>
     </footer>
@@ -218,9 +130,6 @@
     <div id="goto-top" class="goto-top">
         <i  class="fas fa-chevron-circle-up"></i>
     </div>
-
-
-
 </body>
 
 </html>
