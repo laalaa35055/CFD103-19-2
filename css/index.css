@@ -11,12 +11,17 @@
             width: 1200px;
             display: flex;
             justify-content: space-between;
+            overflow: hidden;
         }
 
         .about-ghost .ghost-txt {
             width: 500px;
             margin-left: 100px;
             text-align: center;
+            opacity: 0;
+            position: relative;
+            top: -500px;
+            transition: all .8s;
         }
 
         .about-ghost .ghost-txt h1 {
@@ -32,6 +37,11 @@
             color: white;
             text-align: left;
         }
+        .about-ghost .ghost-txt p:nth-child(3){
+            font-size: 20px;
+            float: right;
+            margin-top: 15px;
+        }
 
         .about-ghost .background-ghost {
             width: 550px;
@@ -41,7 +51,30 @@
             width: 100%;
             vertical-align: top;
             margin-bottom: 150px;
-            opacity: 1;
+            opacity: 0;
+        }
+
+        @keyframes sss{
+            from{
+                transform: scale(1);
+                opacity: 0;
+            }
+            10%{
+                transform: scale(1.1);
+                opacity: .5;
+            }
+            25%{
+                transform: scale(1);
+                opacity: .1;
+            }
+            50%{
+                transform: scale(1.1);
+                opacity: .5;
+            }
+            to{
+                transform: scale(1);
+                opacity: 1;
+            }
         }
 
         .hot-place {
@@ -123,6 +156,10 @@
         .culture {
             width: 1200px;
             margin-left: auto;
+            overflow: hidden;
+        }
+        .culture ul{
+            height: 1200px;
         }
         .culture h1 {
             text-align: center;
@@ -131,14 +168,27 @@
             font-size: 50px;
         }
         .culture-content {
+            transition: all 1s;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-bottom: 100px;
-            transition: opacity .5s ;
-            opacity: 1;
         }
-
+        .culture #culture-content-1{
+            position: relative;
+            left: -1200px;
+            opacity: 0;
+        }
+        .culture #culture-content-2{      
+            position: relative;
+            right: -1200px;
+            opacity: 0;
+        }
+        .culture #culture-content-3{
+            position: relative;
+            left: -1200px;
+            opacity: 0;
+        }
         .culture-content> :first-child {
             margin-right: 150px;
             margin-left: 50px;
@@ -289,10 +339,6 @@
             color: #1A1616;
         }
 
-
-
-
-
         .hot-ghost .hot-ghost-pic img {
             width: 100%;
             border-radius: 50%;
@@ -304,7 +350,9 @@
             height: 31.25rem;
             background: url(../img/decorate/three.png) no-repeat center center / 100% 100%;
             opacity: .5;
+            position: relative;
         }
+
 
         .contact {
             padding: 20px;
@@ -364,4 +412,230 @@
             color: #ccc;
             text-align: center;
             background-color: rgba(44, 44, 44, .5);
+        }
+        @media screen and (max-width:768px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            .main-contents {
+                width: 100%;
+                display: block;
+                background: url("../img/decorate/second.jpg") no-repeat center center / 100% 100%;
+            }
+
+            .about-ghost {
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+
+            .about-ghost .ghost-txt {
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+
+            .about-ghost .ghost-txt h1 {
+                width: 100%;
+                display: block;
+                font-size: 30px;
+            }
+
+            .about-ghost .ghost-txt p {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .background-ghost {
+                display: block;
+                max-width: 300px;
+                margin: 50px auto 0;
+            }
+
+            .background-ghost img {
+                display: block;
+                max-width: 100%;
+                vertical-align: top;
+                margin: auto;
+            }
+
+            .hot-place {
+                width: 100%;
+            }
+
+            .hot-place h1 {
+                margin: 0 auto 50px;
+            }
+
+            .hot-place .hot-place-img {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .hot-place .hot-place-img li {
+                max-width: 100%;
+                display: block;
+                margin: auto;
+                margin-bottom: 50px;
+            }
+
+            .culture {
+                width: 100%;
+            }
+            .culture ul {
+                height: auto;
+            }
+
+            .culture-content {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 40px;
+            }
+
+            .culture-content .culture-img {
+                width: 80%;
+                margin: 20px auto;
+            }
+
+            .culture-content:nth-child(2) .culture-img {
+                order: -1;
+            }
+
+            .culture-content .culture-txt {
+                width: 80%;
+                margin: 20px auto;
+            }
+
+            .discuss {
+                width: 100%;
+                margin: auto;
+            }
+
+            .hot-discuss {
+                width: 100%;
+            }
+
+            .hot-discuss img {
+                width: 100%;
+                margin: auto;
+            }
+
+            .hot-discuss h2 {
+                width: 100%;
+                display: block;
+                font-size: 18px;
+                margin: 15px auto;
+            }
+
+            .hot-discuss .heart {
+                display: block;
+                max-width: 100%;
+                margin: 100px auto auto 10px;
+            }
+
+            .hot-ghost li {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            .hot-ghost-pic {
+                width: 100px;
+                display: block;
+                margin: 25px auto 0;
+            }
+
+            .hot-ghost-txt {
+                height: auto;
+                display: block;
+                max-width: 100%;
+                text-align: center;
+                border: none;
+                margin: auto;
+            }
+
+            .hot-ghost-txt p {
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                font-size: 18px;
+            }
+
+            .hot-ghost-txt h2 {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hot-ghost li .hot-ghost-txt a {
+                max-width: 100%;
+                display: inline-block;
+                margin: auto;
+                margin-top: 20px;
+                color: red;
+                padding: 5px 10px;
+                background-color: rgba(33, 33, 33, .9);
+            }
+
+            .hot-ghost-txt p:nth-of-type(1) {
+                margin: 10px auto;
+                text-align: center;
+            }
+
+            .hot-ghost-txt p:nth-of-type(2) {
+                margin: 0;
+                text-align: center;
+            }
+
+            .contact {
+                max-width: 100%;
+                margin: auto;
+            }
+
+            .contact-info p {
+                text-align: left;
+                font-size: 10px;
+            }
+
+            .contact-info p span {
+                text-align: left;
+                font-size: 8px;
+            }
+
+            .contact-method {
+                margin-left: 20px;
+                margin-right: 50px;
+            }
+
+            .contact-method p {
+                font-size: 20px;
+            }
+
+            .contact-method span {
+                text-align: left;
+                font-size: 14px;
+            }
+
+            .contact-method li a {
+                font-size: 14px;
+                text-align: left;
+            }
+
+            .end-img {
+                width: 100%;
+                height: 300px;
+                opacity: 1;
+            }
+
+            footer p {
+                font-size: 11px;
+            }
         }

@@ -79,6 +79,7 @@
 .interest-block{
     background-color: rgba(11, 11, 11, .6);
     margin-bottom: 50px;
+    border-radius: 10px;
 }
 .interest-block h2{
     color: #ccc;
@@ -111,6 +112,78 @@
     float: right;
 }
 
+
+
+.read-ans{
+    width: 1100px;
+    margin-left: auto;
+    background-color: rgba(11, 11, 11, .6);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    display: flex;
+}
+.people{
+    background-color: rgba(77, 77, 77, .6);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 220px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.people p{
+    color: #33ccff;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+}
+.people img{
+    width: 120px;
+    margin: 20px auto;
+    vertical-align: top;
+}
+.ans-contents{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-grow: 1;
+    background-color: rgba(44, 44, 44, .6);
+}
+.ans-contents p:nth-of-type(1){
+    color: #ccc;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+    margin: auto 20px;
+}
+.ans-contents p:nth-of-type(1)::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../img/decorate/admin.gif);
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+    position: relative;
+    top: -3px;
+}
+.ans-contents p:nth-of-type(2){
+    color: #ccc;
+    margin: 20px 20px;
+}
+.read-ans .people span{
+    color: #33ccff;
+    float: right;
+}
+.read-ans .people span:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 @media screen and (max-width:768px) {
     .read-contents{
         width: 100%;
@@ -125,6 +198,8 @@
     .bread{
         width: 100%;
         margin: auto;
+        box-sizing: border-box;
+        padding-left: 10px;
     }
     .read-content header h3{
         font-size: 18px;
@@ -177,4 +252,24 @@
     .interest-contents .content span:nth-of-type(2){
         display: none;
     }
+    .people{
+        width: 100%;
+        border-radius: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .people span{
+        box-sizing: border-box;
+        padding-right: 10px;
+    }
+    .read-ans{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .ans-contents{
+        border-radius: 0;
+    }
+
 }
