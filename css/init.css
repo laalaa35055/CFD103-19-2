@@ -200,6 +200,9 @@
                 transition: left .6s;
                 z-index: 99;
             }
+            .main-menu li{
+                margin: 30px auto;
+            }
 
             #control-bar:checked~.main-header .main-menu {
                 left: 0;

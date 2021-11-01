@@ -162,16 +162,19 @@
         margin: auto;
         text-align: center;
     }
-
+    .card-info-content .card-img::before{
+        display: none;
+    }
 
     .card-info-content .card-img img{
-        width: 180px;
+        width: 200px;
         margin: 20px auto;
         text-align: center;
     }
     .card-info h2, .card-info span{
         text-align: center;
         font-size: 20px;
+        margin: auto;
     }
     .card-info{
         margin: auto;

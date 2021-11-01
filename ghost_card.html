@@ -30,11 +30,12 @@
                     <li><a href="hot_place.html">熱門地點</a></li>
                     <li><a href="Ghost_House.html">鬼怪屋</a></li>
                     <li><a href="discuss.html">討論區</a></li>
-                    <li><a href="#">百鬼圖</a></li>
                     <li><a class="fab fa-facebook-square" href="#"></a></li>
                     <li><a class="fab fa-instagram" href="#"></a></li>
                     <li><a class="fab fa-youtube" href="#"></a></li>
                     <li><a class="fab fa-twitter" href="#"></a></li>
+                    <li><a href="contribution.html">投稿</a></li>
+                    <li><a href="follow.html">訂閱我們</a></li>
                 </div>
             </ul>
         </header>
@@ -62,7 +63,7 @@
                     </div>
                     <div class="card-info">
                         <h2>簡介：<span> 流傳在日本中學生之間的傳言，當某人看過一套受到詛咒的錄影帶後，會接到一通奇怪鈴聲的電話，在這通電話結束後，觀看者就會受到詛咒。</span></h2><br>
-                        <h2>票數：<span>12</span>人</h2>
+                        <h2>票數：<span id="number">100</span>人</h2>
                         <h2>推薦指數：
                             <span>
                                 <img src="img/decorate/star.png" alt="">
@@ -73,7 +74,7 @@
                         </h2><br>
                         <div>
                             <a href="#">評價</a>
-                            <a href="#">投票</a>
+                            <a onclick="add(this);">投票</a>
                         </div>
                     </div>
                 </div>
@@ -105,6 +106,13 @@
     <div id="goto-top" class="goto-top">
         <i class="fas fa-chevron-circle-up"></i>
     </div>
+    <script type="text/javascript">
+        function add(e){
+            e.style.display = "none";
+            var number = document.getElementById("number");
+            number.innerHTML =  (parseInt(number.innerHTML) + 1) +" ( 已投票 ) ";
+        }
+    </script>
 
 
 

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/39e7c5d7e7.js" crossorigin="anonymous"></script>
+    <script src="js/config.js"></script>
+    <link rel="stylesheet" href="css/init.css">
+    <title>投稿</title>
+    <style type="text/css">
+        .contribution {
+            width: 560px;
+            margin: 50px auto 50px;
+            border-radius: 10px;
+            background-color: rgba(44, 44, 44, .6);
+        }
+
+        .contribution h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 30px;
+            display: block;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .contribution {
+            padding: 50px 0;
+
+        }
+
+        .contribution h1::after {
+            display: block;
+            content: '';
+            background-color: white;
+            height: 1px;
+            flex-grow: 1;
+            margin: 20px 50px 80px;
+        }
+
+        .contribution_content {
+            box-sizing: border-box;
+            width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contribution b {
+            color: red;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .contribution_write {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 15px 0;
+        }
+
+        .contribution_write:nth-child(1) {
+            align-items: center;
+        }
+
+        .contribution_write span {
+            color: white;
+            font-size: 20px;
+            margin-right: 15px;
+            text-align: center;
+            /* display: flex; */
+        }
+
+        .contribution_write input {
+            width: 400px;
+            border-radius: 10px;
+            /* padding: 10px; */
+            font-size: 15px;
+            text-align: center;
+        }
+
+        textarea {
+            width: 400px;
+            height: 300px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contribution button {
+            border: none;
+            width: 60px;
+            padding: 10px;
+            color: white;
+            background-color: #208EB1;
+            border-radius: 5px;
+            margin: auto;
+        }
+
+        .contribution_write:nth-child(3) {
+            color: white;
+        }
+        @media screen and (max-width:768px) {
+            .contribution{
+                width: 100%;
+                overflow: hidden;
+            }
+            .contribution div{
+                width: 100%;
+                margin: 15px auto;
+                display: inline-block;
+            }
+            .contribution_write{
+                width: 100%;
+            }
+            .contribution span{
+                width: 100%;
+                font-size: 18px;
+                text-align: left;
+            }
+            .contribution input{
+                width: 100%;
+                border-radius: 0px;
+                margin: auto;
+            }
+            .contribution textarea{
+                border-radius: 0;
+                width: 100%;
+                margin: auto;
+            }
+            .contribution_content{
+                width: 100%;margin: auto;
+                display: flex;
+                flex-direction: column;
+            }
+            .contribution_content{
+                display: block;
+            }
+            .contribution_content b:nth-of-type(3){
+                display: block;
+                text-align: center;
+            }
+            .contribution_content input{
+                width: 100%;
+            }
+            .contribution_content button{
+                display: block;
+                text-align: center;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <input type="checkbox" id="control-bar">
+        <header class="main-header">
+            <ul class="sidebar">
+                <div class="logo">
+                    <a href="index.html"><img src="img/decorate/logo.png" alt="墨x怪"></a>
+                </div>
+                <label class="hb" for="control-bar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="main-menu">
+                    <li><a href="hot_place.html">熱門地點</a></li>
+                    <li><a href="Ghost_House.html">鬼怪屋</a></li>
+                    <li><a href="discuss.html">討論區</a></li>
+                    <li><a class="fab fa-facebook-square" href="#"></a></li>
+                    <li><a class="fab fa-instagram" href="#"></a></li>
+                    <li><a class="fab fa-youtube" href="#"></a></li>
+                    <li><a class="fab fa-twitter" href="#"></a></li>
+                    <li><a href="contribution.html">投稿</a></li>
+                    <li><a href="follow.html">訂閱我們</a></li>
+                </div>
+            </ul>
+        </header>
+        <main class="contribution">
+                <h1>投稿</h1>
+                <div class="contribution_content">
+                    <div class="contribution_write">
+                        <span><b> * </b>主題：</span><input type="text">
+                    </div>
+                    <div class="contribution_write">
+                        <span><b> * </b>內容：</span><textarea></textarea>
+                    </div>
+                    <div class="contribution_write">
+                        <span>&nbsp&nbsp&nbsp檔案：</span><input type="file">
+                    </div>
+                    <b>* 請在內容處提供來源 謝謝</b>
+                    <button>投稿</button>
+                </div>
+        </main>
+    </div>
+    <footer>
+        <p>Disclaimer: Tibame Frontend Class CFD103 Practice use only</p>
+    </footer>
+    <div id="goto-top" class="goto-top">
+        <i class="fas fa-chevron-circle-up"></i>
+    </div>
+</body>
+
+</html>
