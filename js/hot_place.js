@@ -40,6 +40,10 @@ window.onload = function(){
         }
         else{
             map.style.height = "10px";
+            for( var i=0;i<= xy.length;i++){
+                xy[i].style.display= "none";
+            }
+
         }
     };
     xy1.onclick = function(e){
